@@ -1,6 +1,8 @@
 function Cabecalho(){
-    retunr (
+    return (
+        <>
         <h1>Cabecalho</h1>
+        </>
     );
 }
 
