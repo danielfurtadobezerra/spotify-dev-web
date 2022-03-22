@@ -1,7 +1,10 @@
 function Cabecalho(){
     return (
         <>
-        <h1>Cabecalho</h1>
+
+            <Link to="/">Home</Link>
+            <Link to="/faq">FAQ</Link>
+
         </>
     );
 }
