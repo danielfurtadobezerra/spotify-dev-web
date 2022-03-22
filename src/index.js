@@ -7,11 +7,12 @@ import './components/Cabecalho';
 import './components/Menu';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Cabecalho/>
-    <Menu/>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+
+        <App />
+
+    </BrowserRouter>
+ ,
   document.getElementById('root')
 );
 
