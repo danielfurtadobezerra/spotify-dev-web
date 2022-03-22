@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import Cabecalho from './components/Cabecalho'; '../src/components/Cabecalho';
-import Menu from './components/Menu'; '..src/components/Menu';
+import Cabecalho from './components/Cabecalho';
+import Menu from './components/Menu';
+import Faq from './components/Faq';
+import Home from './components/Home';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

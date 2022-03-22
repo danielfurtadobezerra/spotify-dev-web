@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './components/Cabecalho';
-import './components/Menu';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
     <BrowserRouter>
