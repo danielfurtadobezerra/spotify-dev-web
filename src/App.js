@@ -1,6 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
-import './Cabecalho';
+import '../src/components/Cabecalho';
+import '..src/components/Menu';
 
 function App() {
   return (
