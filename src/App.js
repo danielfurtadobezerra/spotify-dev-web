@@ -10,6 +10,7 @@ function App() {
     <Cabecalho/>
     <Routes>
         <Route path="/" element={<Home/>}/>
+        
         <Route path='/faq' element={<Faq/>}/>
     </Routes>
 

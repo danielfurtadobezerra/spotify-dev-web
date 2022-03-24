@@ -3,7 +3,8 @@
 function Faq(){
     return(
         <>
-            <h3>FAQ</h3>
+           
+		   
         
         </>
     );
