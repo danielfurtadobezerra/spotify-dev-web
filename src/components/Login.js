@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import './Login.css';
+
 
 function Login(){
   return(
@@ -19,7 +21,7 @@ function Login(){
         <label className="form-check-label">
           <input className="form-check-input" type="checkbox" name="remember" /> Remember me
         </label>
-        <a href="cadastro.html" style={{margin: 4}}><fonte color="blue"> cadastrar-se </fonte></a>
+        <Link to="/cad">Cadastre-se</Link>
       </div>
     </form>
     <button className="btn-primary">Entrar</button>
