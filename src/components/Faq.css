@@ -1,9 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
+.fundo-suporte{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
-.fundo-suporte{
-    padding-top: 15%;
-    margin-bottom: 100%;
+table{
+    width: 50vw;
+    height: 50vh;
+
+}
+
+body{
+    margin: 0px;
 }

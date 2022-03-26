@@ -21,6 +21,7 @@ function Login(){
         <label className="form-check-label">
           <input className="form-check-input" type="checkbox" name="remember" /> Remember me
         </label>
+        <br></br>
         <Link to="/cad">Cadastre-se</Link>
       </div>
     </form>
