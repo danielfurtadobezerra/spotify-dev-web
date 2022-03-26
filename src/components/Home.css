@@ -57,8 +57,9 @@ body {
 	background-blend-mode: color;
 }
 
+/* Faq */
 .fundo-suporte{
-	height: 130vh;
+	height: 130vh; /* Problema com o container da página */
 	display: flex;
 	justify-content:flex-center;
 	align-items: center;
