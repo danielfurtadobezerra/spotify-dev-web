@@ -1,5 +1,6 @@
 // Jamile
 import { Link } from 'react-router-dom';
+import './Cabecalho.css';
 function Cabecalho(){
     return (
         <>
