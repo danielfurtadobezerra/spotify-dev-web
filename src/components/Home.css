@@ -149,8 +149,11 @@ fieldset.grupo .campo {
 
 .campo input[type="text"],
 .campo input[type="email"],
+.campo input[type="password"],
 .campo input[type="url"],
 .campo input[type="tel"],
+.campo input[type="checkbox"],
+.campo input[type="submit"],
 .campo select,
 .campo textarea {
     padding: 0.2em;
@@ -192,5 +195,8 @@ fieldset.grupo .campo {
 
 .botao, select, label.checkbox {
     cursor: pointer;
+}
+.submit{
+	padding: 20px;
 }
 
