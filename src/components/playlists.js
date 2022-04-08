@@ -30,7 +30,7 @@ const playlists=[
     },
     {
         id: 2,
-        nome: 'melhores rock',
+        nome: 'melhores sertanejo',
         capa: '', 
         formato: '',
         musicas: [
@@ -59,7 +59,7 @@ const playlists=[
     },
     {
         id: 3,
-        nome: 'melhores rock',
+        nome: 'melhores pagode',
         capa: '', 
         formato: '',
         musicas: [
@@ -88,7 +88,7 @@ const playlists=[
     },
     {
         id: 4,
-        nome: 'melhores rock',
+        nome: 'melhores reggae',
         capa: '', 
         formato: '',
         musicas: [
@@ -117,7 +117,7 @@ const playlists=[
     },
     {
         id: 5,
-        nome: 'melhores rock',
+        nome: 'melhores internacional',
         capa: '', 
         formato: '',
         musicas: [
@@ -146,7 +146,7 @@ const playlists=[
     },
     {
         id: 6,
-        nome: 'melhores rock',
+        nome: 'melhores mpb',
         capa: '', 
         formato: '',
         musicas: [

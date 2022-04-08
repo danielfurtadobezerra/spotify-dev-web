@@ -6,7 +6,7 @@ import playlists from './playlists';
 
 function Home(){
 
-  const [play, setPlay] = useState()
+/*  const [play, setPlay] = useState()
 
   const playlistsFormatada = playlists.map((play)  => {
     return(
@@ -21,7 +21,9 @@ function Home(){
 
     )
   }
-  );
+  );*/
+
+    const [playlists, setPlaylists] = useState([])
 
     return(
         <>
@@ -33,7 +35,7 @@ function Home(){
               <p>
                 Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
               </p>
-              <button className="btn-primary">Obtenha o Spotify Free</button>
+              <button className="btn-primary" onChange={(e)=> playlists(e.target.value)}>Obtenha o Spotify Free</button>
             </div>
           </div> 
         </>
