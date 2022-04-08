@@ -35,7 +35,7 @@ function Home(){
               <p>
                 Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
               </p>
-              <button className="btn-primary" onChange={(e)=> playlists(e.target.value)}>Obtenha o Spotify Free</button>
+              <button className="btn-primary" onChange={(e)=> playlists(e.target.value)}>Acesse todas as Playlists</button>
             </div>
           </div> 
         </>
