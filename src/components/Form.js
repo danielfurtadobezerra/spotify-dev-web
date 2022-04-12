@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Form.css';
+import usuariosMock from './usuariosMock'
 
 
 function Form(){
@@ -16,6 +17,12 @@ const [estado, setEstado] = useState("")
 
 function handleSubmit(e){
   e.preventDefault();
+
+  const usuario = {nome, snome, senha, email, telefone, sexom, sexof, cidade, estado}
+
+  usuariosMock.push(usuario);
+
+  console.log(usuariosMock)
 }
 
 //const usuario = {senha, email}

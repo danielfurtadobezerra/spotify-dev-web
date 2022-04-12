@@ -13,6 +13,7 @@ function Cabecalho(){
 					<li className="navbar-item"><Link to="/">Baixar</Link></li>
 					<li className="navbar-item"><Link to="/Login">Inscrever</Link></li>
 					<li className="navbar-item"><Link to="/">Sair</Link></li>
+					<li className="navbar-item"><Link to="/play">PlayLists</Link></li>
 				</ul>
 			</div>
 		</nav>

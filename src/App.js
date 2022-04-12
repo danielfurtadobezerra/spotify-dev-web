@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Form from './components/Form';
 import { Route, Routes } from 'react-router-dom';
+import PlayHome from './components/PlayHome';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/cad' element={<Form/>}/>
+        <Route path='/play' element={<PlayHome/>}/>
         
         {/* <Route path='/playlist/:id' element={<PlaylistDetail/>}/> */}
     </Routes>
