@@ -1,38 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './PlayHome.css';
-import { useState } from "react";
+import playlists from "./playlists";
+
 
 
 
 export default function PlayHome() {
-        return (
-            <>
-                <div>
-                    <div className="circle" />
-                    <div className="circle2" />
-                    <div className="container">
-                        <div className="img-container tilt">
-                            <img className="tilt" id="photo" alt="album cover" src="img/POTC.jpg" />
-                        </div>
-                        <audio src="music/jacinto-1.mp3" />
-                        <h2 id=" title ">titulo</h2>
-                        <h3 id=" artist ">artista</h3>
-                        <div className="progress-container" id="progress-container">
-                            <div className="progress" id="progress" />
-                            <div className="duration-wrapper">
-                                <span id="current-time">0:00</span>
-                                <span id="duration">2:06</span>
+    const playlistsFormatada = playlists.map (
+        (play) =>{
+            return (
+                <Link to={`/playlists/${play.id}`}>
+                    <div className="card" stayle={{width:'200px'}}>
+                        <img className="card-img-top" src={play.id} alt="Card image"/>
+                            <div className="card-body">
+                                <h4 className="card-title">{play.capa}</h4>
+
                             </div>
-                            <div className="player-controls">
-                                <i className="fas fa-backward" id="prev" title="Previous" />
-                                <i className="fas fa-play main-button" id="play" title="Play" />
-                                <i className="fas fa-forward" id="next" title="Next" />
-                            </div>
-                        </div>
+
+
                     </div>
-                </div>
 
-            </>
+                </Link>
 
-        );
-    }
+            )
+        }
+    );
+
+    return (
+        <div className='container'>{playlistsFormatada}</div>
+    )
+}

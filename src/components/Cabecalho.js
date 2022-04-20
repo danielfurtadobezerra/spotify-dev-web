@@ -1,6 +1,8 @@
 // Jamile
 import { Link } from 'react-router-dom';
 import './Cabecalho.css';
+import React from 'react';
+
 function Cabecalho(){
     return (
         <>
@@ -13,7 +15,7 @@ function Cabecalho(){
 					<li className="navbar-item"><Link to="/">Baixar</Link></li>
 					<li className="navbar-item"><Link to="/Login">Inscrever</Link></li>
 					<li className="navbar-item"><Link to="/">Sair</Link></li>
-					<li className="navbar-item"><Link to="/play">PlayLists</Link></li>
+					<li className="navbar-item"><Link to="/plalists/id:">PlayLists</Link></li>
 				</ul>
 			</div>
 		</nav>

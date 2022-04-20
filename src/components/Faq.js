@@ -1,5 +1,6 @@
 // Ana alice
 import './Faq.css';
+import React from 'react';
 
 function Faq(){
     return(

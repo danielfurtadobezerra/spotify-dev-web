@@ -1,46 +1,145 @@
+import React from "react";
+
 const playlists=[
         {
-            name:'ArRahuman',
-            displayName:'Nadhiye Nadhiye',
-            artist:'Muthu',
-            color:'#000046',
-            audio: 'music/jacinto-1.mp3'
+            id:1,
+            nome:'ArRahuman',
+            capa:'Nadhiye Nadhiye',
+            artista:'Muthu',
+            musicas:[
+                {
+                    id:10,
+                    nome:'kajsn',
+                    arquivo:'Anirudh.mp3'
+                },
+                {
+                    id:12,
+                    nome:'laksc',
+                    arquivo:'ArRahuman.mp3'
+                },
+                {
+                    id:13,
+                    nome:'lkmj',
+                    arquivo:'joker.mp3'
+                }
+            ]
         },
         {
-            name:'Believer',
-            displayName:'Imagine Drangons',
-            artist:'Muthu',
-            color:'rgb(253, 157, 0)',
-            audio: 'music/jacinto-1.mp3'
+            id:2,
+            nome:'ArRahuman',
+            capa:'Nadhiye Nadhiye',
+            artista:'Muthu',
+            musicas:[
+                {
+                    id:14,
+                    nome:'kajsn',
+                    arquivo:'Anirudh.mp3'
+                },
+                {
+                    id:15,
+                    nome:'laksc',
+                    arquivo:'ArRahuman.mp3'
+                },
+                {
+                    id:16,
+                    nome:'lkmj',
+                    arquivo:'joker.mp3'
+                }
+            ]
         },
         {
-            name:'joker',
-            displayName:'Lai la la BGM',
-            artist:'Muthu',
-            color:' linear-gradient(to left, #0f9b0f, #000000)',
-            audio: 'music/jacinto-1.mp3'
+            id:3,
+            nome:'ArRahuman',
+            capa:'Nadhiye Nadhiye',
+            artista:'Muthu',
+            musicas:[
+                {
+                    id:17,
+                    nome:'kajsn',
+                    arquivo:'Anirudh.mp3'
+                },
+                {
+                    id:18,
+                    nome:'laksc',
+                    arquivo:'ArRahuman.mp3'
+                },
+                {
+                    id:19,
+                    nome:'lkmj',
+                    arquivo:'joker.mp3'
+                }
+            ]
         },
         {
-            name:'Jack Sparrow',
-            displayName:'Pirates Of The Caribbean ',
-            artist:'Muthu',
-            color:'rgba(251, 6, 6, 0.979)',
-            audio: 'music/jacinto-1.mp3'
+            id:4,
+            nome:'ArRahuman',
+            capa:'Nadhiye Nadhiye',
+            artista:'Muthu',
+            musicas:[
+                {
+                    id:20,
+                    nome:'kajsn',
+                    arquivo:'Anirudh.mp3'
+                },
+                {
+                    id:21,
+                    nome:'laksc',
+                    arquivo:'ArRahuman.mp3'
+                },
+                {
+                    id:22,
+                    nome:'lkmj',
+                    arquivo:'joker.mp3'
+                }
+            ]
         },
         {
-            name:'scam1992',
-            displayName:'Harshad Mehta',
-            artist:'Muthu',
-            color:'rgb(2, 161, 23)',
-            audio: 'music/jacinto-1.mp3'
+            id:5,
+            nome:'ArRahuman',
+            capa:'Nadhiye Nadhiye',
+            artista:'Muthu',
+            musicas:[
+                {
+                    id:23,
+                    nome:'kajsn',
+                    arquivo:'Anirudh.mp3'
+                },
+                {
+                    id:24,
+                    nome:'laksc',
+                    arquivo:'ArRahuman.mp3'
+                },
+                {
+                    id:25,
+                    nome:'lkmj',
+                    arquivo:'joker.mp3'
+                }
+            ]
         },
         {
-            name:'Anirudh',
-            displayName:'Master-the-Blaster',
-            artist:'Muthu',
-            color:'rgba(0, 20,255, 0.9)',
-            audio: 'music/jacinto-1.mp3'
+            id:6,
+            nome:'ArRahuman',
+            capa:'Nadhiye Nadhiye',
+            artista:'Muthu',
+            musicas:[
+                {
+                    id:26,
+                    nome:'kajsn',
+                    arquivo:'Anirudh.mp3'
+                },
+                {
+                    id:27,
+                    nome:'laksc',
+                    arquivo:'ArRahuman.mp3'
+                },
+                {
+                    id:28,
+                    nome:'lkmj',
+                    arquivo:'joker.mp3'
+                }
+            ]
         }
+            
 ]
 
 export default playlists;
