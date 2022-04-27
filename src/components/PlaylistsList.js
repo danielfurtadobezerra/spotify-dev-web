@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './PlayHome.css';
-import playlists from "./playlists";
+import axios from 'axios';
 
 
 
 
-export default function PlayHome() {
+export default function PlaylistsList() {
+    const [playlists, setPlaylists] = useStateate([]);
+
+    useEffectect(() => {
+        const plalists = axios.get("http://localhost:3001/playlists")
+        .then(
+            (res) => {
+                    setPlaylists(res.data)
+            }
+        )
+        
+    })
+   
+
     const playlistsFormatada = playlists.map (
         (play) =>{
             return (

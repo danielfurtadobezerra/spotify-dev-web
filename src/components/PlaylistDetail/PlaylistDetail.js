@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import playlists from "../playlists";
 import React from "react";
 
-export default function PlaylistDetaiL(){
+export default function PlaylistDetail(){
     const {id} = useParams();
 
     const playlistSelecionada = playlists.find((play)=> play.id == id);

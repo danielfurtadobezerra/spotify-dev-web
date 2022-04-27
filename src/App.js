@@ -19,7 +19,7 @@ function App() {
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/cad' element={<Form/>}/>
-        <Route path='/playlists/: id' element={<PlaylistDetail/>}/>
+        <Route path='/playlists/id:' element={<PlaylistDetail/>}/>
       
 
 
