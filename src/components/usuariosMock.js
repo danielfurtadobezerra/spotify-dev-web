@@ -1,4 +1,3 @@
-const usuariosMock =[
-]
+const usuariosMock = []
 
 export default usuariosMock;
