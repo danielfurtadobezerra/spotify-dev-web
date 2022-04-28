@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import playlists from './playlists';
 import React from 'react';
 
 
@@ -25,7 +24,7 @@ function Home(){
   }
   );*/
 
-    const [playlists, setPlaylists] = useState([])
+    const [playlists, setPlaylists] = useState([]);
 
     return(
         <>
@@ -37,7 +36,7 @@ function Home(){
               <p>
                 Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
               </p>
-              <button className="btn-primary" onChange={(e)=> playlists(e.target.value)}><Link to="/play">Acesse todas as Playlists</Link></button>
+              <button className="btn-primary" onChange={(e)=> setPlaylists(e.target.value)}><Link to="/playlists">Acesse todas as Playlists</Link></button>
             </div>
           </div> 
         </>

@@ -1,11 +1,20 @@
 import { useParams } from "react-router-dom";
-import playlists from "../playlists";
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function PlaylistDetail(){
     const {id} = useParams();
 
-    const playlistSelecionada = playlists.find((play)=> play.id == id);
+    const [playlistSelecionada, setPlaylistSelecionada] = useState([]);
+
+    axios.get(`http://localhost:3001/playlists/${id}`)
+    .then(
+        (res) => {
+                setPlaylistSelecionada(res.data)
+                
+        }
+    )
+      
 
     const musicas = playlistSelecionada.musicas.map(
         (musica) => {
@@ -18,7 +27,7 @@ export default function PlaylistDetail(){
                 </>
             )
         }
-    );
+    )
 
     return (
         <>

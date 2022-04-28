@@ -6,18 +6,20 @@ import axios from 'axios';
 
 
 export default function PlaylistsList() {
-    const [playlists, setPlaylists] = useStateate([]);
+    const [playlists, setPlaylists] = useState([]);
 
-    useEffectect(() => {
-        const plalists = axios.get("http://localhost:3001/playlists")
+    useEffect(() => {
+        const playlists = axios.get("http://localhost:3001/playlists")
         .then(
             (res) => {
                     setPlaylists(res.data)
             }
         )
         
-    })
+    }, [])
    
+
+    
 
     const playlistsFormatada = playlists.map (
         (play) =>{
@@ -42,4 +44,5 @@ export default function PlaylistsList() {
     return (
         <div className='container'>{playlistsFormatada}</div>
     )
-}
+
+    }
