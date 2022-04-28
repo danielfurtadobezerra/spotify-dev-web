@@ -3,9 +3,9 @@
   "playlists": [
     {
         "id":1,
-        "nome":"'ArRahuman'",
-        "capa":"'Nadhiye Nadhiye'",
-        "artista":"'Muthu'",
+        "nome":"ArRahuman",
+        "capa":"brazil.png",
+        "artista":"Muthu",
         "musicas":[
             {
                 "id":10,
