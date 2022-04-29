@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
+import './playlistsList.css';
+
+
 
 
 
@@ -26,9 +29,9 @@ export default function PlaylistsList() {
             return (
                 <Link to={`/playlists/${play.id}`}>
                     <div className="card" stayle={{width:'200px'}}>
-                        <img className="card-img-top" src={play.id} alt="Card image"/>
+                        <img className="card-img-top" src={play.capa} alt="Card image"/>
                             <div className="card-body">
-                                <h4 className="card-title">{play.capa}</h4>
+                                <h4 className="card-title">{play.arquivo}</h4>
 
                             </div>
 

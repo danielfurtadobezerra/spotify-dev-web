@@ -46,7 +46,7 @@ body {
 	color: white;
 	background: url("../img/showcase.webp") center center/cover;
     background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: color;
+	/*background-blend-mode: color;*/
 }
 .showcase-container{
 	margin-top: 80px;
@@ -54,7 +54,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	display: flexbox;
-	background-blend-mode: color;
+	/*background-blend-mode: color;*/
 }
 
 /* Faq */
@@ -65,7 +65,7 @@ body {
 	align-items: center;
 	color: white;
 	background-color: #916d00;
-	background-blend-mode: color;
+	/*background-blend-mode: color;*/
 	margin-top: -40px;
 	margin-bottom: auto;
 }
@@ -87,7 +87,7 @@ body {
 
 #showcase .showcase-container table td{
 	text-align: justify;
-  	text-justify: inter-word;
+  	/*text-justify: inter-word;*/
 }
 
 a:link{
@@ -123,7 +123,7 @@ td{
 	vertical-align: middle;
 	text-align: center;
 	padding: 30px;
-	text-justify: inter-word;
+	/*text-justify: inter-word;*/
 	text-align: justify;
 }
 
@@ -136,7 +136,7 @@ th{
 }
 
 .container-div {
-	background-color: #00000063;
+	/*background-color: #00000063;*/
     margin: 25px;
     padding: 34px;
     border-radius: 25px;

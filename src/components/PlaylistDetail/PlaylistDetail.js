@@ -22,7 +22,7 @@ export default function PlaylistDetail(){
                 <>
                     <h4>{musica.nome}</h4>
                     <audio controls>
-                        <source src = {musica.arquivo} type=""/>
+                        <source src = {musica.arquivo}/>
                     </audio>
                 </>
             )
