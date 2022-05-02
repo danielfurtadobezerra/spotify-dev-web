@@ -4,6 +4,7 @@ import usuariosMock from './usuariosMock'
 import React from 'react';
 
 
+
 function Form(){
 
 const [nome, setNome] = useState("")
@@ -15,11 +16,16 @@ const [sexom, setSexom] = useState("")
 const [sexof, setSexof] = useState("")
 const [cidade, setCidade] = useState("")
 const [estado, setEstado] = useState("")
+const [conEmail, setconEmail] = useState("")
+//const [erros, setErros] = useState({})
+//const [data, setData] = useState("")
+//const [users, setUsers] = useState("")
+
 
 function handleSubmit(e){
   e.preventDefault();
 
-  const usuario = {nome, snome, senha, email, telefone, sexom, sexof, cidade, estado}
+  const usuario = {nome, snome, senha, email, telefone, sexom, sexof, cidade, estado, conEmail}
 
   usuariosMock.push(usuario);
 
@@ -27,6 +33,16 @@ function handleSubmit(e){
 }
 
 //const usuario = {senha, email}
+
+   /* if (email !== conEmail){
+      setErros({conEmail:'E-mails não conferem'})
+    }else{
+      setErros([])
+      const usuario ={email, senha, data}
+      users.push(usuario);
+
+      console.log(users);
+    }*/
 
 return(
     <>
@@ -58,6 +74,10 @@ return(
             <div className="campo">
               <label htmlFor="email">E-mail</label>
               <input type="text" id="email" onChange={(e)=> setEmail(e.target.value)} name="email" style={{width: '20em'}} defaultValue />
+            </div>
+            <div className="campo">
+              <label htmlFor="email">Confirme o e-mail</label>
+              <input type="text" id="conEmail" onChange={(e)=> setconEmail(e.target.value)} name="conemail" style={{width: '20em'}} defaultValue />
             </div>
             <div className="campo">
               <label htmlFor="email">Senha</label>

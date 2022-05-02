@@ -196,7 +196,5 @@ fieldset.grupo .campo {
 .botao, select, label.checkbox {
     cursor: pointer;
 }
-.submit{
-	padding: 20px;
-}
+
 

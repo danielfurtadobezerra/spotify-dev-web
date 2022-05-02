@@ -203,3 +203,15 @@ body {
 	display: inline-block;
 	margin-left: 10px;
 }
+
+.submit{
+	padding: 50px;
+	margin-left: -20px;
+	margin-top: 15px;
+}
+
+div.submit{
+	padding: 20px;
+	
+}
+
