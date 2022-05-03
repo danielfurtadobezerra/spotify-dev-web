@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Form.css';
 import usuariosMock from './usuariosMock'
 import React from 'react';
+import axios from 'axios';
 
 
 
@@ -17,7 +18,7 @@ const [sexof, setSexof] = useState("")
 const [cidade, setCidade] = useState("")
 const [estado, setEstado] = useState("")
 const [conEmail, setconEmail] = useState("")
-//const [erros, setErros] = useState({})
+const [erros, setErros] = useState({})
 //const [data, setData] = useState("")
 //const [users, setUsers] = useState("")
 
@@ -25,11 +26,22 @@ const [conEmail, setconEmail] = useState("")
 function handleSubmit(e){
   e.preventDefault();
 
-  const usuario = {nome, snome, senha, email, telefone, sexom, sexof, cidade, estado, conEmail}
 
-  usuariosMock.push(usuario);
+    if (email !== conEmail){
+      setErros({conEmail:'E-mails não conferem'})
+    }else{
+      setErros({})
+      const usuario = {nome, snome, senha, email, telefone, sexom, sexof, cidade, estado}
+      
+      axios.post("http://localhost:3001/usuarios", usuario)
+      .then( (res) => {
+        console.log(res.data);
+      } )
 
-  console.log(usuariosMock)
+      
+    }
+
+  
 }
 
 //const usuario = {senha, email}
@@ -49,17 +61,17 @@ return(
 
     <div id="showcase">
       <div className="showcase-container">
-        <form onSubmit={(e)=> handleSubmit(e)} action="/action_page.php" method="post" style={{margin: '60px 20px 20px 130px'}}>
+        <form onSubmit={(e)=> handleSubmit(e)} style={{margin: '60px 20px 20px 130px'}}>
         
           <fieldset style={{fontSize: 'larger'}}>
             <fieldset className="grupo" style={{border: '0ch'}}>
               <div className="campo">
                 <label htmlFor="nome">Nome</label>
-                <input type="text" id="nome" onChange={(e)=> setNome(e.target.value)}  name="nome" style={{width: '10em'}} defaultValue />
+                <input type="text" id="nome" onChange={(e)=> setNome(e.target.value)}  name="nome" style={{width: '10em'}} />
               </div>
               <div className="campo">
                 <label htmlFor="snome">Sobrenome</label>
-                <input type="text" id="snome" onChange={(e)=> setSnome(e.target.value)}  name="snome" style={{width: '10em'}} defaultValue />
+                <input type="text" id="snome" onChange={(e)=> setSnome(e.target.value)}  name="snome" style={{width: '10em'}} />
               </div>
             </fieldset>
             <div className="campo">

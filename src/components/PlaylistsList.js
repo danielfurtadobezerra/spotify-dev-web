@@ -12,7 +12,7 @@ export default function PlaylistsList() {
     const [playlists, setPlaylists] = useState([]);
 
     useEffect(() => {
-        const playlists = axios.get("http://localhost:3001/playlists")
+        axios.get("http://localhost:3001/playlists")
         .then(
             (res) => {
                     setPlaylists(res.data)

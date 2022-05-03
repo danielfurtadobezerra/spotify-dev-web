@@ -26,7 +26,7 @@ function Login(){
         <Link to="/cad">Cadastre-se</Link>
       </div>
     </form>
-    <button className="btn-primary">Entrar</button>
+    <button  className="btn-primary">Entrar</button>
   </div>
 </div>
 </>

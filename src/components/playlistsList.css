@@ -1,6 +1,7 @@
 .container{
   margin-top: 90px;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 .card{
