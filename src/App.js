@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Form from './components/Form';
 import { Route, Routes } from 'react-router-dom';
-import PlaylistDetail from './components/PlaylistDetail/PlaylistDetail';
+import PlaylistDetail from './components/PlaylistDetail';
 import PlaylistsList from './components/PlaylistsList';
 import Login2 from './components/Login2';
 

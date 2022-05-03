@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import React, { useState } from "react";
 import axios from "axios";
+import './playlistsList.css';
+
 
 
 export default function PlaylistDetail(){
@@ -23,7 +25,7 @@ export default function PlaylistDetail(){
             return(
                 <div className="card">
                     <h4>{musica.nome}</h4>
-                    <audio controls>
+                    <audio className="audio" controls>
                         <source src = {musica.arquivo}/>
                     </audio>
                 </div>

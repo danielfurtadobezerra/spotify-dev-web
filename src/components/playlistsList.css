@@ -1,10 +1,31 @@
 .container{
-  margin-top: 90px;
-  margin-bottom: 10px;
+  margin-top: 115px;
+  margin-bottom: -15px;
   justify-content: center;
+  border: none;
+  position: static;
 }
 
-.card{
-   margin-top: 10px;
+div.card{
+  margin-top: 2px;
+  width: 50vh;
+  border: none;
+  border: 1px solid transparent;
+  position: static;
+  
 }
 
+.card-img{
+  width: 20vh;
+  border: none;
+  border-radius: none;
+  max-width: 30%;
+  max-height: 30% ;
+
+}
+
+.audio{
+  margin-right: 40%;
+  border-style: outset;
+  pointer-events: all;
+}
