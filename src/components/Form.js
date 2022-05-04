@@ -85,29 +85,29 @@ return(
             </div>
             <div className="campo">
               <label htmlFor="email">E-mail</label>
-              <input type="text" id="email" onChange={(e)=> setEmail(e.target.value)} name="email" style={{width: '20em'}} defaultValue />
+              <input type="text" id="email" onChange={(e)=> setEmail(e.target.value)} name="email" style={{width: '20em'}} />
             </div>
             <div className="campo">
               <label htmlFor="email">Confirme o e-mail</label>
-              <input type="text" id="conEmail" onChange={(e)=> setconEmail(e.target.value)} name="conemail" style={{width: '20em'}} defaultValue />
+              <input type="text" id="conEmail" onChange={(e)=> setconEmail(e.target.value)} name="conemail" style={{width: '20em'}}/>
             </div>
             <div className="campo">
               <label htmlFor="email">Senha</label>
-              <input type="password" id="senha" onChange={(e)=> setSenha(e.target.value)} name="senha" style={{width: '20em'}} defaultValue />
+              <input type="password" id="senha" onChange={(e)=> setSenha(e.target.value)} name="senha" style={{width: '20em'}} />
             </div>
             <div className="campo">
               <label htmlFor="telefone">Telefone</label>
-              <input type="text" id="telefone" onChange={(e)=> setTelefone(e.target.value)} name="telefone" style={{width: '10em'}} defaultValue />
+              <input type="text" id="telefone" onChange={(e)=> setTelefone(e.target.value)} name="telefone" style={{width: '10em'}} />
             </div>
             <fieldset className="grupo">
               <div className="campo">
                 <label htmlFor="cidade">Cidade</label>
-                <input type="text" id="cidade" onChange={(e)=> setCidade(e.target.value)} name="cidade" style={{width: '10em'}} defaultValue />
+                <input type="text" id="cidade" onChange={(e)=> setCidade(e.target.value)} name="cidade" style={{width: '10em'}} />
               </div>
 
               <div className="campo">
                 <label htmlFor="estado">Estado</label>
-                <input type="text" id="estado" onChange={(e)=> setEstado(e.target.value)} name="estado" style={{width: '10em'}} defaultValue />
+                <input type="text" id="estado" onChange={(e)=> setEstado(e.target.value)} name="estado" style={{width: '10em'}}/>
               </div>
               <div className="campo">
                 <label>Spotify</label>

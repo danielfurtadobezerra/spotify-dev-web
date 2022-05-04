@@ -25,111 +25,111 @@
     },
     {
       "id": 2,
-      "nome": "'ArRahuman'",
+      "nome": "ArRahuman",
       "capa": "/img/internacional.jpg",
       "musicas": [
         {
           "id": 14,
-          "nome": "'kajsn'",
-          "arquivo": "'Anirudh.mp3'"
+          "nome": "'Jack Sparrow'",
+          "arquivo": "/music/Jack Sparrow.mp3"
         },
         {
           "id": 15,
-          "nome": "'laksc'",
-          "arquivo": "'ArRahuman.mp3'"
+          "nome": "'Believer'",
+          "arquivo": "/music/Believer.mp3"
         },
         {
           "id": 16,
-          "nome": "'lkmj'",
-          "arquivo": "'joker.mp3'"
+          "nome": "'Joker'",
+          "arquivo": "/music/joker.mp3"
         }
       ]
     },
     {
       "id": 3,
-      "nome": "'ArRahuman'",
+      "nome": "ArRahuman",
       "capa": "/img/internacional.jpg",
       "musicas": [
         {
           "id": 17,
-          "nome": "'kajsn'",
-          "arquivo": "Anirudh.mp3'"
+          "nome": "kajsn",
+          "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 18,
-          "nome": "'laksc'",
-          "arquivo": "'ArRahuman.mp3'"
+          "nome": "laksc",
+          "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 19,
-          "nome": "'lkmj'",
-          "arquivo": "'joker.mp3'"
+          "nome": "lkmj",
+          "arquivo": "/music/joker.mp3"
         }
       ]
     },
     {
       "id": 4,
-      "nome": "'ArRahuman'",
+      "nome": "ArRahuman",
       "capa": "/img/mpb.jpeg",
       "musicas": [
         {
           "id": 20,
-          "nome": "'kajsn'",
-          "arquivo": "'Anirudh.mp3'"
+          "nome": "kajsn",
+          "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 21,
-          "nome": "'laksc'",
-          "arquivo": "'ArRahuman.mp3'"
+          "nome": "laksc",
+          "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 22,
-          "nome": "'lkmj'",
-          "arquivo": "'joker.mp3'"
+          "nome": "lkmj",
+          "arquivo": "/music/joker.mp3"
         }
       ]
     },
     {
       "id": 5,
-      "nome": "'ArRahuman'",
+      "nome": "ArRahuman",
       "capa": "/img/pagode.jpeg",
       "musicas": [
         {
           "id": 23,
-          "nome": "'kajsn'",
-          "arquivo": "'Anirudh.mp3'"
+          "nome": "kajsn",
+          "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 24,
-          "nome": "'laksc'",
-          "arquivo": "'ArRahuman.mp3'"
+          "nome": "laksc",
+          "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 25,
-          "nome": "'lkmj'",
-          "arquivo": "'joker.mp3'"
+          "nome": "lkmj",
+          "arquivo": "/music/joker.mp3"
         }
       ]
     },
     {
       "id": 6,
-      "nome": "'ArRahuman'",
+      "nome": "ArRahuman",
       "capa": "/img/reggae.jpg",
       "musicas": [
         {
           "id": 26,
-          "nome": "'kajsn'",
-          "arquivo": "'Anirudh.mp3'"
+          "nome": "kajsn",
+          "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 27,
-          "nome": "'laksc'",
-          "arquivo": "'ArRahuman.mp3'"
+          "nome": "laksc",
+          "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 28,
-          "nome": "'lkmj'",
-          "arquivo": "'joker.mp3'"
+          "nome": "lkmj",
+          "arquivo": "/music/joker.mp3"
         }
       ]
     }
@@ -176,6 +176,42 @@
       "cidade": "for",
       "estado": "ce",
       "id": 13
+    },
+    {
+      "nome": "DANIEL GONCALVES FURTADO BEZERRA",
+      "snome": "",
+      "senha": "",
+      "email": "",
+      "telefone": "",
+      "sexom": "",
+      "sexof": "",
+      "cidade": "",
+      "estado": "",
+      "id": 14
+    },
+    {
+      "nome": "Daniel",
+      "snome": "Bezerra",
+      "senha": "",
+      "email": "",
+      "telefone": "",
+      "sexom": "",
+      "sexof": "",
+      "cidade": "",
+      "estado": "",
+      "id": 15
+    },
+    {
+      "nome": "Daniel",
+      "snome": "Bezerra",
+      "senha": "123456",
+      "email": "danielfurtadobezerra@gmail.com",
+      "telefone": "85999012498",
+      "sexom": "masculino",
+      "sexof": "",
+      "cidade": "Fortaleza",
+      "estado": "CE",
+      "id": 16
     }
   ]
 }
