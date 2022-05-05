@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 import React from 'react';
+import dbjson from '../data/db.json'
 
 export default function Login2() {
 
@@ -14,30 +15,23 @@ export default function Login2() {
     function handleSubmit(e){
         e.preventDefault();
         
-        axios.get(`http://localhost:3001/usuarios?email=${email}`)
-        .then(
-            (res) => {
-             const usuario = res.data [0];
-             if (usuario.senha !== senha ) {
-                 setErros ({dadosInvalidos: 'Dados Inválidos!!!'});
-                 return
-             }
-
-             localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
-
-             navigate('/')
-            
-         }
-
-        )
-
-    }     
+        let _usuario = dbjson.usuarios.find(usuario => usuario.email == email);      
+        if (_usuario.senha !== senha ) {
+            setErros ({dadosInvalidos: 'Dados Inválidos!!!'});
+            setEmail (email);
+            return
+        }
+       
+        localStorage.setItem('usuarioLogado', JSON.stringify(_usuario));
+       navigate('/')
+       }     
      
       return  (
           <>
-            {erros.dadosInvalidos && (<div class = "Alert alert-danger">
-               {erros.email} 
-            </div>)} 
+         
+          <div class = "alert alert-danger" hidden={(erros.dadosInvalidos == "")}>Dados Inválidos{erros.email} </div>
+          
+            
           <div id="showcase">
             <div className="showcase-container">
               <form onSubmit={(e)=> handleSubmit(e)} action="/action_page.php" method="post" style={{margin: '60px 20px 20px 130px'}}>
@@ -53,7 +47,7 @@ export default function Login2() {
                     <input type="password" id="senha" onChange={(e)=> setSenha(e.target.value)} name="senha" style={{width: '20em'}} defaultValue />
                   </div>
                     <div className="submit">
-                    <button type="submit" style={{fontSize: 'large'}} name="submit">inscrever</button>
+                    <button  className="btn-primary">Entrar</button>
                     </div>
                       </fieldset>
                       </fieldset>
@@ -63,4 +57,5 @@ export default function Login2() {
           </>
           )
       }
+    
     
