@@ -8,7 +8,7 @@ import Form from './components/Form';
 import { Route, Routes } from 'react-router-dom';
 import PlaylistDetail from './components/PlaylistDetail';
 import PlaylistsList from './components/PlaylistsList';
-import Login2 from './components/Login2';
+
 
 
 
@@ -20,7 +20,6 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/login2' element={<Login2/>}/>
         <Route path='/cad' element={<Form/>}/>
         <Route path='/playlists' element={<PlaylistsList/>}/>
         <Route path='/playlists/:id' element={<PlaylistDetail/>}/>
