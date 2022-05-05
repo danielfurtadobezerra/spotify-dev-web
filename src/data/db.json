@@ -3,22 +3,21 @@
   "playlists": [
     {
       "id": 1,
-      "nome": "ArRahuman",
       "capa": "/img/brazil.png",
       "musicas": [
         {
           "id": 10,
-          "nome": "kajsn",
+          "nome": "Aquela lá",
           "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 12,
-          "nome": "laksc",
+          "nome": "Outra lá",
           "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 13,
-          "nome": "lkmj",
+          "nome": "Aquela depois da outra lá",
           "arquivo": "/music/joker.mp3"
         }
       ]
@@ -52,17 +51,17 @@
       "musicas": [
         {
           "id": 17,
-          "nome": "kajsn",
+          "nome": "Aquela lá",
           "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 18,
-          "nome": "laksc",
+          "nome": "Outra lá",
           "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 19,
-          "nome": "lkmj",
+          "nome": "Aquela depois da outra lá",
           "arquivo": "/music/joker.mp3"
         }
       ]
@@ -74,17 +73,17 @@
       "musicas": [
         {
           "id": 20,
-          "nome": "kajsn",
+          "nome": "Aquela lá",
           "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 21,
-          "nome": "laksc",
+          "nome": "Outra lá",
           "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 22,
-          "nome": "lkmj",
+          "nome": "Aquela depois da outra lá",
           "arquivo": "/music/joker.mp3"
         }
       ]
@@ -96,17 +95,17 @@
       "musicas": [
         {
           "id": 23,
-          "nome": "kajsn",
+          "nome": "Aquela lá",
           "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 24,
-          "nome": "laksc",
+          "nome": "Outra lá",
           "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 25,
-          "nome": "lkmj",
+          "nome": "Aquela depois da outra lá",
           "arquivo": "/music/joker.mp3"
         }
       ]
@@ -118,17 +117,17 @@
       "musicas": [
         {
           "id": 26,
-          "nome": "kajsn",
+          "nome": "Aquela lá",
           "arquivo": "/music/Anirudh.mp3"
         },
         {
           "id": 27,
-          "nome": "laksc",
+          "nome": "Outra lá",
           "arquivo": "/music/ArRahuman.mp3"
         },
         {
           "id": 28,
-          "nome": "lkmj",
+          "nome": "Aquela depois da outra lá",
           "arquivo": "/music/joker.mp3"
         }
       ]
