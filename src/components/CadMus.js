@@ -1,33 +1,33 @@
-import { useState, useParams } from 'react';
-import './Form.css';
 import React from 'react';
+import { useParams } from "react-router-dom";
+import { useState } from 'react';
+import './Form.css';
 import axios from 'axios';
-
 
 
 function CadMus() {
 
-    const {id} = useParams();
+    const { id } = useParams();
 
-    const [arquivo, setArquivo] = useState("")
     const [nome, setNome] = useState("")
-
+    const [arquivo, setArquivo] = useState("");
 
     function handleSubmit(e) {
         e.preventDefault();
 
-        const musicas = {arquivo, nome}
+        const musicas = { nome, arquivo }
 
-        axios.post(`http://localhost:3001/playlists/${id}/musicas`, musicas)
-            .then((res) => {
-                console.log(res.data);
-            })
-
+        axios.post(`http://localhost:3001/playlists/${id}/musicas`,{
+            nome, arquivo
+          })
+            .then(
+                (res) => {
+                    console.log(res.data)
+                } )
     }
 
     return (
         <>
-
             <div id="showcase">
                 <div className="showcase-container">
                     <form onSubmit={(e) => handleSubmit(e)} style={{ margin: '60px 20px 20px 130px' }}>
@@ -44,7 +44,7 @@ function CadMus() {
                                 </div>
                             </fieldset>
                             <div className="submit">
-                                <button type="submit" style={{ fontSize: 'large' }} name="submit">Criar</button>
+                                <button type="submit" style={{ fontSize: 'large' }} name="submit">Adicionar</button>
                             </div>
                         </fieldset>
                     </form>

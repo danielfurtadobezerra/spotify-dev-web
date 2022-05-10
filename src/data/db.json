@@ -301,6 +301,15 @@
       "nome": "teste de nome4",
       "musicas": [],
       "id": 12
+    },
+    {
+      "capa": "/img/brazil.png",
+      "artista": "Daniel",
+      "nome": "Playlist do Daniel",
+      "musicas": [
+        {}
+      ],
+      "id": 13
     }
   ],
   "usuarios": [

@@ -8,7 +8,7 @@ import './Home.css';
 
 export default function PlaylistDetail(){
 
-    const {id} = useParams();
+    const { id } = useParams();
 
     const [playlistSelecionada, setPlaylistSelecionada] = useState({musicas:[]});
 
@@ -16,7 +16,6 @@ export default function PlaylistDetail(){
     .then(
         (res) => {
                 setPlaylistSelecionada(res.data)
-                
         }
     )
       
@@ -30,7 +29,6 @@ export default function PlaylistDetail(){
                         <source src = {musica.arquivo}/>
                     </audio>
                     <br/>
-                    <button  className="btn-primary"><Link to="/CadMus">Adicionar músicas</Link></button>
                 </div>
             )
         }
@@ -40,9 +38,14 @@ export default function PlaylistDetail(){
         <>
             <div className="card" stayle={{width:'200px'}}>
                 <img className="card-img-top" src={playlistSelecionada.capa} alt="Card image"/>
+                <br/><br/><br/><br/>
+                <br/><br/>
                     <div className="card-body">
                          <h4 className="card-title">{playlistSelecionada.nome}</h4>
                     </div>
+                    <button  className="btn-primary">
+                        <Link to={`/cadMus/${playlistSelecionada.id}`}>Adicionar músicas</Link>
+                    </button>
            </div>
            {musicas}
         </>

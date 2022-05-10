@@ -8,7 +8,7 @@ function Cabecalho(){
         <>
 <nav id="navbar">
 			<div className="navbar-container">
-				<img src="img/logo.png" alt="" class="logo" />
+				<img src="img/logo.png" alt="" className="logo" />
 				<ul className="navbar-items">
 					<li className="navbar-item"><Link to="/">Home</Link></li>
 					<li className="navbar-item"><Link to="/faq">Faq</Link></li>

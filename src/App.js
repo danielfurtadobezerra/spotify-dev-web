@@ -24,12 +24,9 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/cad' element={<Form/>}/>
         <Route path='/cadPlay' element={<CadPlay/>}/>
-        <Route path='/cadMus' element={<CadMus/>}/>
+        <Route path='/cadMus/:id' element={<CadMus/>}/>
         <Route path='/playlists' element={<PlaylistsList/>}/>
         <Route path='/playlists/:id' element={<PlaylistDetail/>}/>
-      
-
-
         
         {/* <Route path='/playlist/:id' element={<PlaylistDetail/>}/> */}
     </Routes>
