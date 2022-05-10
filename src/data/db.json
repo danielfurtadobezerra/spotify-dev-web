@@ -19,6 +19,14 @@
           "id": 13,
           "nome": "Aquela depois da outra lá",
           "arquivo": "/music/joker.mp3"
+        },
+        {
+          "nome": "bbbb",
+          "arquivo": "aaaa"
+        },
+        {
+          "nome": "teste nome musica",
+          "arquivo": "/music/joker.mp3"
         }
       ]
     },
@@ -292,22 +300,33 @@
       "capa": "/img/brazil.png",
       "artista": "teste de capa3",
       "nome": "teste de nome3",
-      "musicas": {},
+      "musicas": [
+        {
+          "nome": "tjyukyukyukyukyukyuk",
+          "arquivo": "/music/joker.mp3"
+        }
+      ],
       "id": 11
     },
     {
-      "capa": "/img/brazil.png",
-      "artista": "teste de capa4",
-      "nome": "teste de nome4",
-      "musicas": [],
+      "musicas": [
+        {
+          "nome": "admin",
+          "arquivo": "/music/joker.mp3"
+        }
+      ],
       "id": 12
     },
     {
       "capa": "/img/brazil.png",
       "artista": "Daniel",
-      "nome": "Playlist do Daniel",
+      "nome": "Daniel",
       "musicas": [
-        {}
+        {},
+        {
+          "nome": "teste nome musica",
+          "arquivo": "/music/joker.mp3"
+        }
       ],
       "id": 13
     }

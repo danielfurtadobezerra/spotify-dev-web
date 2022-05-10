@@ -12,18 +12,20 @@ function CadMus() {
     const [nome, setNome] = useState("")
     const [arquivo, setArquivo] = useState("");
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
 
-        const musicas = { nome, arquivo }
+        const musica = { nome, arquivo }
 
-        axios.post(`http://localhost:3001/playlists/${id}/musicas`,{
-            nome, arquivo
-          })
-            .then(
-                (res) => {
-                    console.log(res.data)
-                } )
+        const resPlayList = await axios.get(`http://localhost:3001/playlists/${id}`);
+
+        let musicas = resPlayList.data.musicas;
+
+        await axios.patch(`http://localhost:3001/playlists/${id}`, {
+            musicas: [...musicas, musica]
+        });
+
+        
     }
 
     return (
