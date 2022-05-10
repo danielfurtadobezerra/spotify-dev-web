@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 import React from 'react';
-import dbjson from '../data/db.json';
 import { Link } from 'react-router-dom';
 
 function Login() {

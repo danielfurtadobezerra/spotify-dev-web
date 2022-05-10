@@ -10,6 +10,7 @@ import PlaylistDetail from './components/PlaylistDetail';
 import PlaylistsList from './components/PlaylistsList';
 import CadPlay from './components/CadPlay';
 import CadMus from './components/CadMus';
+import BuscarMusic from './components/BuscarMusic';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/cad' element={<Form/>}/>
         <Route path='/cadPlay' element={<CadPlay/>}/>
         <Route path='/cadMus/:id' element={<CadMus/>}/>
+        <Route path='/cadBmusic/:id' element={<BuscarMusic/>}/>
         <Route path='/playlists' element={<PlaylistsList/>}/>
         <Route path='/playlists/:id' element={<PlaylistDetail/>}/>
         

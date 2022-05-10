@@ -27,6 +27,14 @@
         {
           "nome": "teste nome musica",
           "arquivo": "/music/joker.mp3"
+        },
+        {
+          "nome": "victor",
+          "arquivo": "arghn"
+        },
+        {
+          "nome": "fsdfs fsdfsd",
+          "arquivo": "arghn"
         }
       ]
     },
