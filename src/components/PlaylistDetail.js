@@ -18,6 +18,17 @@ export default function PlaylistDetail(){
                 setPlaylistSelecionada(res.data)
         }
     )
+
+    async function deletar() {
+
+        const resPlayList = await axios.get(`http://localhost:3001/playlists/${id}`);
+
+        let musica = resPlayList.data.musicas;
+
+        await axios.delete(`http://localhost:3001/playlists/${id}`, {
+            musica
+        });
+    }
       
 
     const musicas = (playlistSelecionada && playlistSelecionada.musicas.map(
@@ -28,6 +39,7 @@ export default function PlaylistDetail(){
                     <audio className="audio" controls>
                         <source src = {musica.arquivo}/>
                     </audio>
+                    <button className="btn-primary" onClick={deletar} >Deletar música</button>
                     <br/>
                 </div>
             )

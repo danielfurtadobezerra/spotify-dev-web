@@ -24,8 +24,6 @@ function CadMus() {
         await axios.patch(`http://localhost:3001/playlists/${id}`, {
             musicas: [...musicas, musica]
         });
-
-        
     }
 
     return (
