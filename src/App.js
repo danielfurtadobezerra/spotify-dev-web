@@ -8,6 +8,8 @@ import Form from './components/Form';
 import { Route, Routes } from 'react-router-dom';
 import PlaylistDetail from './components/PlaylistDetail';
 import PlaylistsList from './components/PlaylistsList';
+import CadPlay from './components/CadPlay';
+import CadMus from './components/CadMus';
 
 
 
@@ -21,6 +23,8 @@ function App() {
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/cad' element={<Form/>}/>
+        <Route path='/cadPlay' element={<CadPlay/>}/>
+        <Route path='/cadMus' element={<CadMus/>}/>
         <Route path='/playlists' element={<PlaylistsList/>}/>
         <Route path='/playlists/:id' element={<PlaylistDetail/>}/>
       

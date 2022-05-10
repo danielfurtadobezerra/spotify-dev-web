@@ -1,7 +1,8 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import React, { useState } from "react";
 import axios from "axios";
 import './playlistsList.css';
+import './Home.css';
 
 
 
@@ -28,6 +29,8 @@ export default function PlaylistDetail(){
                     <audio className="audio" controls>
                         <source src = {musica.arquivo}/>
                     </audio>
+                    <br/>
+                    <button  className="btn-primary"><Link to="/CadMus">Adicionar músicas</Link></button>
                 </div>
             )
         }
