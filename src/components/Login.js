@@ -12,26 +12,43 @@ function Login(){
   const [erros, setErros] = useState ({dadosInvalidos: ''});
   const navigate = useNavigate();
 
-
-  function handleSubmit(e){
-      e.preventDefault();
+ function handleSubmit(e){
+     e.preventDefault();
       
-      let _usuario = dbjson.usuarios.find(usuario => usuario.email == email);      
-      if (_usuario.senha !== senha ) {
-          setErros ({dadosInvalidos: 'Dados Inválidos!!!'});
-          setEmail (email);
-          return
-      }
+     axios.get(`http://localhost:3001/usuarios?email=${email}`)
+      .then ( (res) => {
+       const usuario = res.data [0];
+        if (usuario.senha !== senha ) {
+        setErros ({dadosInvalidos: 'Dados Inválidos!!!'});
+        return
+        }
+        localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+        
+        navigate('/playlists')
+      })
+  
+  
+ // function handleSubmit(e){
+    //  e.preventDefault();
+      
+    //  let _usuario = dbjson.usuarios.find(usuario => usuario.email == email);      
+     // if (_usuario.senha !== senha ) {
+      //    setErros ({dadosInvalidos: 'Dados Inválidos!!!'});
+      //    setEmail (email);
+       //   return
+     // }
      
-      localStorage.setItem('usuarioLogado', JSON.stringify(_usuario));
-     navigate('/playlists')
-     }   
+    //  localStorage.setItem('usuarioLogado', JSON.stringify(_usuario));
+   //  navigate('/playlists')
+  //   }   
 
 
   return (
     <>
-    <div class = "alert alert-danger" hidden={(erros.dadosInvalidos == "")}>Dados Inválidos{erros.email}</div>
 
+    {erros.dadosInvalidos && (<div class="alert alert-danger">
+      {erros.dadosInvalidos}
+    </div>)}
     
 <div id="showcase">
   <div className="showcase-container">
