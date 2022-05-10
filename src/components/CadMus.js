@@ -21,11 +21,7 @@ function CadMus() {
 
         let musicas = resPlayList.data.musicas;
 
-        await axios.patch(`http://localhost:3001/playlists/${id}`, {
-            musicas: [...musicas, musica]
-        });
-
-        
+        await axios.patch(`http://localhost:3001/playlists/${id}`, {musicas} );
     }
 
     return (

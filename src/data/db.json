@@ -279,57 +279,7 @@
           }
         ]
       }
-    ],
-    {
-      "capa": "teste de capa",
-      "id": 8
-    },
-    {
-      "capa": "teste de capa2",
-      "artista": "Los Loucos",
-      "nome": "Louco",
-      "id": 9
-    },
-    {
-      "capa": "/img/brazil.png",
-      "artista": "Teste de artista",
-      "nome": "Teste de nome",
-      "id": 10
-    },
-    {
-      "capa": "/img/brazil.png",
-      "artista": "teste de capa3",
-      "nome": "teste de nome3",
-      "musicas": [
-        {
-          "nome": "tjyukyukyukyukyukyuk",
-          "arquivo": "/music/joker.mp3"
-        }
-      ],
-      "id": 11
-    },
-    {
-      "musicas": [
-        {
-          "nome": "admin",
-          "arquivo": "/music/joker.mp3"
-        }
-      ],
-      "id": 12
-    },
-    {
-      "capa": "/img/brazil.png",
-      "artista": "Daniel",
-      "nome": "Daniel",
-      "musicas": [
-        {},
-        {
-          "nome": "teste nome musica",
-          "arquivo": "/music/joker.mp3"
-        }
-      ],
-      "id": 13
-    }
+    ]
   ],
   "usuarios": [
     {
