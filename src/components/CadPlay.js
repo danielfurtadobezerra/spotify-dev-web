@@ -10,7 +10,7 @@ function CadPlay() {
     const [capa, setCapa] = useState("")
     const [artista, setArtista] = useState("")
     const [nome, setNome] = useState("")
-    const [musicas, setMusicas] = useState([{}])
+    const [musicas, setMusicas] = useState([])
     //const [data, setData] = useState("")
     //const [users, setUsers] = useState("")
 

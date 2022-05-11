@@ -19,15 +19,15 @@ export default function PlaylistDetail(){
         }
     )
 
-    async function deletar() {
+    async function deletar(posVetorMusicas) {
 
         const resPlayList = await axios.get(`http://localhost:3001/playlists/${id}`);
 
-        let musica = resPlayList.data.musicas;
+        let playlist = resPlayList.data;//.musicas;
 
-        await axios.delete(`http://localhost:3001/playlists/${id}`, {
-            musica
-        });
+        playlist.musicas.splice(posVetorMusicas, 1);
+
+        await axios.put(`http://localhost:3001/playlists/${id}`, playlist);
     }
       
 

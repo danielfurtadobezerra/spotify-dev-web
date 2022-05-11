@@ -287,7 +287,27 @@
           }
         ]
       }
-    ]
+    ],
+    {
+      "capa": "/img/brazil.png",
+      "artista": "victor",
+      "nome": "123",
+      "musicas": [
+        {},
+        {
+          "nome": "victor",
+          "arquivo": "argt"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "capa": "/img/brazil.png",
+      "artista": "teste de capa",
+      "nome": "teste de nome3",
+      "musicas": [],
+      "id": 8
+    }
   ],
   "usuarios": [
     {

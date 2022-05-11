@@ -14,7 +14,6 @@ function Cabecalho(){
 					<li className="navbar-item"><Link to="/faq">Faq</Link></li>
 					<li className="navbar-item"><Link to="/">Baixar</Link></li>
 					<li className="navbar-item"><Link to="/Login">Inscrever</Link></li>
-					<li className="navbar-item"><Link to="/">Sair</Link></li>
 					<li className="navbar-item"><Link to="/playlists">PlayLists</Link></li>
 					<li className="navbar-item"><Link to="/cadBmusic/:id">Buscar</Link></li>
 				</ul>
