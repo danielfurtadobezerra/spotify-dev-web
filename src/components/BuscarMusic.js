@@ -1,39 +1,32 @@
+import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import './BuscarMusic.css';
 
-const musicas = [
-    'Anirudh.mp3',
-    'ArRahuman.mp3',
-    'Believer.mp3',
-    'Jack Sparrow.mp3',
-    'joker.mp3',
-    'scam1992.mp3',
-  ];
 
-  export default function BuscarMusic(){
-    const [busca, setBusca] = useState([]);
+export default function BuscarMusic() {
+  const [busca, setBusca] = useState([]);
+  const [musicasBusca, setMusicasBusca] = useState([]);
 
-  
-  
-    const musicasFiltradas = musicas.filter( //Filter: filtra as musicas digitadas na busca.
-      (musica)=> musica.includes(busca));
-  
-  
-  
-    return (
-      <div className="musicas">
-        <h1> Busque suas músicas</h1>
-        <input type="text"
-        value={busca}
-        onChange={(e)=> setBusca(e.target.value)}/> 
-          <ul>
-            {musicasFiltradas.map((musica)=>(
-              <li key={musica}>{musica}</li>
-            ))}
-          </ul>
-      </div>
-    )
-  
+  async function handleSubmit() {
 
+    const m = await axios.get(`http://localhost:3001/musicas?nome=${busca}`);
+    setMusicasBusca(m)
   }
+
+  return (
+    <div className="musicas">
+      <h1> Busque suas músicas</h1>
+      <input type="text"
+        value={busca}
+        onChange={(e) => setBusca(e.target.value)} />
+      <ul>
+        {musicasBusca.map((musica) => (
+          <li key={musica}>{musica}</li>
+        ))}
+      </ul>
+    </div>
+  )
+
+
+}

@@ -29,6 +29,10 @@
         {
           "nome": "victor",
           "arquivo": "/music/ArRahuman.mp3"
+        },
+        {
+          "nome": "",
+          "arquivo": ""
         }
       ]
     },
@@ -381,6 +385,38 @@
       "cidade": "Fortaleza",
       "estado": "CE",
       "id": 16
+    }
+  ],
+  "baseMusica": [
+    {
+      "id": 1,
+      "nome": "Believer",
+      "arquivo": "/music/Believer.mp3"
+    },
+    {
+      "id": 2,
+      "nome": "Anirudh",
+      "arquivo": "/music/Anirudh.mp3"
+    },
+    {
+      "id": 3,
+      "nome": "ArRahuman",
+      "arquivo": "/music/ArRahuman.mp3"
+    },
+    {
+      "id": 4,
+      "nome": "Jack Sparrow",
+      "arquivo": "/music/Jack Sparrow.mp3"
+    },
+    {
+      "id": 5,
+      "nome": "Joker",
+      "arquivo": "/music/joker.mp3"
+    },
+    {
+      "id": 6,
+      "nome": "scam1992",
+      "arquivo": "/music/scam1992.mp3"
     }
   ]
 }
