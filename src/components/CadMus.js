@@ -12,6 +12,8 @@ function CadMus() {
     const [nome, setNome] = useState("")
     const [arquivo, setArquivo] = useState("");
 
+    const [busca, setBusca] = useState([]);
+
     async function handleSubmit(e) {
         e.preventDefault();
 
@@ -25,6 +27,22 @@ function CadMus() {
             musicas: [...musicas, musica]
         });
     }
+
+    const musicas = [
+        'Anirudh.mp3',
+        'ArRahuman.mp3',
+        'Believer.mp3',
+        'Jack Sparrow.mp3',
+        'joker.mp3',
+        'scam1992.mp3',
+      ];
+    
+        
+    
+      
+      
+        const musicasFiltradas = musicas.filter( //Filter: filtra as musicas digitadas na busca.
+          (musica)=> musica.includes(busca));
 
     return (
         <>
@@ -50,6 +68,17 @@ function CadMus() {
                     </form>
                 </div>
             </div>
+            <div className="musicas">
+        <h1> Busque suas músicas</h1>
+        <input type="text"
+        value={busca}
+        onChange={(e)=> setBusca(e.target.value)}/> 
+          <ul>
+            {musicasFiltradas.map((musica)=>(
+              <li key={musica}>{musica}</li>
+            ))}
+          </ul>
+      </div>
         </>
     );
 }
