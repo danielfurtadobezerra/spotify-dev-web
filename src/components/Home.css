@@ -31,6 +31,10 @@ body {
 	cursor: pointer;
 }
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+	margin-bottom: 20px;
+}
+
 .logo {
 	height: 40px;
 	width: auto;

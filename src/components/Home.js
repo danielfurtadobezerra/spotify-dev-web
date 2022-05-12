@@ -39,7 +39,6 @@ function Home(){
                 Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
               </p>
               <button className="btn-primary" onChange={(e)=> setPlaylists(e.target.value)}><Link to="/playlists">Acesse todas as Playlists</Link></button>
-                <br/>
               <button className="btn-primary" onChange={(e)=> setPlaylists(e.target.value)}><Link to="/CadPlay">Criar Playlists</Link></button>
             </div>
           </div> 
